@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 2rem auto;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        section h2 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+        .interests ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+        }
+        .cv {
+            margin: 2rem 0;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .project {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            flex: 1 1 calc(33.333% - 2rem);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .project a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 1rem 0;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Name</h1>
+        <p>Welcome to my portfolio. Explore my work, achievements, and interests!</p>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I am a passionate individual with a keen interest in technology, creativity, and innovation. With experience in multiple disciplines, I strive to make a difference through impactful projects and collaborations.</p>
+        </section>
+
+        <section class="interests">
+            <h2>Interests and Achievements</h2>
+            <ul>
+                <li>Software Development and Open Source Contributions</li>
+                <li>Computer Graphics and Visualizations</li>
+                <li>Teaching and Mentoring</li>
+                <li>Published Research Papers in AI and Machine Learning</li>
+                <li>Speaker at International Tech Conferences</li>
+            </ul>
+        </section>
+
+        <section class="cv">
+            <h2>Curriculum Vitae</h2>
+            <p>Download my <a href="cv.pdf" target="_blank">CV here</a> to learn more about my education, work experience, and skills.</p>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: AI Art Generator</h3>
+                <p>An application that creates art using artificial intelligence.</p>
+                <a href="https://github.com/username/ai-art-generator" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Project 2: Interactive 3D Visualization</h3>
+                <p>A tool for visualizing data in 3D, built with WebGL and Three.js.</p>
+                <a href="https://github.com/username/3d-visualization" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Project 3: Educational Game</h3>
+                <p>A fun and interactive game designed to teach programming concepts.</p>
+                <a href="https://github.com/username/edu-game" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

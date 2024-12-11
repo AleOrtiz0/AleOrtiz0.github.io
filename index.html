@@ -64,11 +64,32 @@
             padding: 1rem 0;
             border-top: 1px solid #ddd;
         }
+        
+        .resize {
+            width: 200px; /* Cambia el tamaño */
+            height: auto; /* Mantén las proporciones */
+        }
+        
+        .crop {
+            width: 200px; /* Ancho del cuadrado */
+            height: 200px; /* Alto del cuadrado */
+            overflow: hidden; /* Esconde lo que exceda */
+            position: relative;
+        }
+
+        .crop img {
+            width: 100%; /* Ajusta el tamaño de la imagen */
+            height: auto; /* Mantén las proporciones */
+            position: absolute;
+            top: 50%; /* Centra verticalmente */
+            left: 50%; /* Centra horizontalmente */
+            transform: translate(-50%, -50%); /* Ajusta la posición */
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="penguin.jpg">
+        <img src="penguin.jpg" class="resize">
         <h1>Hola, soy Alejandra Ortiz</h1>
         <p>Soy estudiante de Actuaría y Ciencia de Datos en el ITAM.</p>
     </header>
@@ -88,12 +109,12 @@
         <section id="favorites">
             <h2>Fotos</h2>
             <div class="image-gallery">
-                <img src="books.jpg">
-                <img src="club de tareas.jpg">
-                <img src="presentaciones canva.jpg">
-                <img src="books.jpg">
-                <img src="daisy.jpg">
-                <img src="daisy cono.jpg">
+                <img src="books.jpg" class="resize">
+                <img src="club de tareas.jpg" class="resize">
+                <img src="presentaciones canva.jpg" class="resize">
+                <img src="books.jpg" class="resize">
+                <img src="daisy.jpg" class="resize">
+                <img src="daisy cono.jpg" class="resize">
             </div>
         </section>
         
